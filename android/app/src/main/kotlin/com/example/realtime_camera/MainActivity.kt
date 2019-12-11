@@ -15,9 +15,9 @@ class MainActivity: FlutterActivity() {
 
   override fun onResume() {
     super.onResume()
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-      requestPermissions(arrayOf(Manifest.permission.CAMERA,
-              Manifest.permission.INTERNET),0)
-    }
+//    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//      requestPermissions(arrayOf(Manifest.permission.CAMERA,
+//              Manifest.permission.INTERNET),0)
+//    }
   }
 }
