@@ -206,10 +206,10 @@ class _CameraAppState extends State<CameraApp> {
     }
     return MaterialApp(
       home: Scaffold(
-        body: AspectRatio(
+        body: Container(
+          child: AspectRatio(
             aspectRatio: controller.value.aspectRatio,
-            child: CameraPreview(controller)),
-      ),
-    );
+            child: CameraPreview(controller),
+          ),),),);
   }
 }
